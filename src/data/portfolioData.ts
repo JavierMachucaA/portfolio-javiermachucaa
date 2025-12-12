@@ -40,15 +40,21 @@ export const PORTFOLIO_DATA = {
         testimonials: [
             {
                 avatar: "👤",
-                name: "Masru Ahmed Rafi",
-                role: "CEO & Co-Founder",
-                text: "Touhidul Islam Chayan, has been employed with our company since March 2020 as a Frontend developer."
+                name: "Cristian Hurtado Rojas",
+                role: "FullStack Developer",
+                text: "Javier is an excellent professional with extensive knowledge and a quick ability to understand challenges, technologies, and programming languages. Added to all this is his great communication skill and desire to teach."
             },
             {
                 avatar: "👤",
-                name: "Rayeean Shafkat",
-                role: "CEO & Co-Founder",
-                text: "This is to certify that Touhidul Islam Chayan worked for a full-time Full Stack Developer position."
+                name: "Fernando Riffo Matamala",
+                role: "FullStack Developer Senior",
+                text: "Javier stands out for his technical solidity, his ability to solve complex problems, and his constant orientation towards efficiency and quality in every delivery. His contribution was key in challenging initiatives where reliability, security, and scalability were fundamental. In addition to his technical ability, Javier is a proactive, collaborative person who is always willing to support the team. His positive attitude and commitment made a big difference in the success of our projects."
+            },
+            {
+                avatar: "👤",
+                name: "Jorge Marquez Robinson",
+                role: "Senior Software Engineer",
+                text: "Excellent professional with knowledge in Java, Python, and GCP."
             }
         ]
     },
@@ -91,15 +97,21 @@ export const PORTFOLIO_DATA = {
         testimonials: [
             {
                 avatar: "👤",
-                name: "Masru Ahmed Rafi",
-                role: "CEO & Co-Founder",
-                text: "Touhidul Islam Chayan ha trabajado con nuestra compañía desde Marzo 2020 como desarrollador Frontend."
+                name: "Cristian Hurtado Rojas",
+                role: "FullStack Developer",
+                text: "Javier es un excelente profesional, con altísimos conocimientos y rápida capacidad de entendimiento en desafíos, tecnologías y lenguajes de programación. Todo esto se le suma su gran capacidad de comunicación y ganas de enseñar."
             },
             {
                 avatar: "👤",
-                name: "Rayeean Shafkat",
-                role: "CEO & Co-Founder",
-                text: "Esto certifica que Touhidul Islam Chayan trabajó para una posición de Desarrollador Full Stack a tiempo completo."
+                name: "Fernando Riffo Matamala",
+                role: "FullStack Developer Senior",
+                text: "Javier destaca por su solidez técnica, su capacidad para resolver problemas complejos y su orientación constante a la eficiencia y calidad en cada entrega. Su aporte fue clave en iniciativas desafiantes donde la confiabilidad, seguridad y escalabilidad eran fundamentales. Además de su capacidad técnica, Javier es una persona proactiva, colaborativa y siempre dispuesta a apoyar al equipo. Su actitud positiva y compromiso hicieron una gran diferencia en el éxito de nuestros proyectos."
+            },
+            {
+                avatar: "👤",
+                name: "Jorge Marquez Robinson",
+                role: "Senior Software Engineer",
+                text: "Excelente profesional, con conocimientos en Java, Python y GCP."
             }
         ]
     }
