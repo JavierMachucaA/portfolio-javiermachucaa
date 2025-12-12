@@ -1,0 +1,32 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]
+
+## [1.0.0] - 2025-12-11
+
+### Added
+- **Project Initialization**: Setup React project using Vite with TypeScript template.
+- **GSAP Integration**: Installed and configured GSAP (GreenSock Animation Platform) for high-performance animations.
+- **Particle Engine**: Implemented a custom particle burst system:
+  - Generates dynamic DOM elements on the fly.
+  - Physics-based animation using GSAP (velocity, angle, decay).
+  - Cleaning mechanisms to remove particles after animation to prevent memory leaks.
+- **Interactive Navigation**:
+  - Dynamic tab rendering with React state.
+  - "Zoom-on-hover" effect scaling items to 1.3x.
+  - Golden particle burst triggered on `mouseenter`.
+- **Layout Architecture**:
+  - `Sidebar`: Fixed left panel for profile information.
+  - `Main`: Scrollable content area with specific "About", "Resume", "Portfolio", and "Contact" sections.
+
+### Changed
+- **UI/UX Design Overhaul**:
+  - **Navigation Styling**: Moved from standard tabs to a "pill-shaped" container in the top-right.
+  - **Asymmetric Borders**: 
+    - Main container: Rounded corners except for a sharp bottom-right.
+    - Navigation bar: Rounded bottom-left corner matching the container's aesthetic.
+  - **Profile Badge**: Customized "Software Engineer" tag with specific padding, border-radius, and typography.
+  - **Typography**: Updated font weights and sizes for better hierarchy (e.g., navigation text weight set to 500).
+- **Event Handling Refactor**: Moved from manual `addEventListener` in `useEffect` to React native `onMouseEnter`/`onClick` props for improved reliability and scroll-aware positioning.

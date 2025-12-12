@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# Professional Portfolio - Javier Machuca
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, high-performance personal portfolio website built with **React**, **TypeScript**, and **GSAP**. This project features a unique layout with asymmetric design elements and interactive particle animations.
 
-Currently, two official plugins are available:
+## 🚀 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Advanced Animations Engine (GSAP)
+The application leverages the **GreenSock Animation Platform (GSAP)** for smooth, physics-based interactions:
+*   **Particle Burst System**: A custom-built rendering engine that generates a burst of 30+ golden particles when hovering over navigation items.
+    *   *Mechanism*: Dynamically creates DOM nodes, calculates random trajectories (velocity & angle), and animates them with opacity decay before cleaning up the DOM.
+*   **Interactive Zoom**: Navigation items utilize a transform-based scale animation (1.3x) on hover for immediate visual feedback.
 
-## React Compiler
+### 2. Custom Asymmetric Design
+The UI moves away from standard "box" layouts by strictly following a custom reference design:
+*   **Main Container**: Features a specialized `border-radius` configuration (20px top-left, top-right, bottom-left) with a **sharp linear bottom-right corner**.
+*   **Integrated Navigation**: The navigation bar is visually "merged" into the top-right of the main container, featuring a distinctive **rounded bottom-left corner** that flows into the content area.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. Modern Tech Stack
+*   **Framework**: React 18 with TypeScript for type-safe component logic.
+*   **Build Tool**: Vite for lightning-fast HMR (Hot Module Replacement) and bundling.
+*   **Styling**: Pure CSS3 variables and Flexbox/Grid layouts (no heavy CSS frameworks) for maximum control over the specific border shapes.
+*   **State Management**: React `useState` and `useRef` for tracking active tabs and managing animation references.
 
-## Expanding the ESLint configuration
+## 🛠️ Installation & Setup
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/JavierMachucaA/portfolio-javiermachucaa.git
+    cd portfolio-javiermachucaa
+    ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2.  **Install Dependencies**
+    ```bash
+    npm install
+    ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3.  **Run Development Server**
+    ```bash
+    npm run dev
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🏗️ Project Structure
+
+```text
+src/
+├── components/
+│   ├── Main.tsx       # Core layout, contains the Particle Engine logic
+│   ├── Main.css       # Specific asymmetric border styles
+│   └── sidebar/       # Left profile panel components
+├── Layout.tsx         # Global grid layout definition
+└── main.tsx           # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎨 Design specifics
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The "Software Engineer" badge and navigation pills follow a strict color palette:
+*   **Accent Color**: `#ffb300` (Used for particles and underscores)
+*   **Dark Backgrounds**: `#2b2b2c` (Main content), `#3a3a3a` (Navigation container)
+*   **Typography**: Clean, sans-serif fonts with specific weights (500 for nav items) for readability.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+© 2025 Javier Machuca. Built with ❤️ and code.
