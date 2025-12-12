@@ -1,0 +1,164 @@
+.Sidebar {
+    background-color: #2b2b2c;
+    padding: 30px 25px;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:
+        0 5px 10px rgba(0, 0, 0, 0.3),
+        0 10px 20px rgba(0, 0, 0, 0.35),
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 40px 80px rgba(0, 0, 0, 0.5);
+    /* Subtle transform for depth */
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+/* Profile Image Container - Dark circular background with 3D effect */
+.profile-image-container {
+    width: 120px;
+    height: 120px;
+    background: #e4e6ea;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* Layered 3D shadow effect */
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 40px 80px rgba(0, 0, 0, 0.4),
+        0 80px 160px rgba(0, 0, 0, 0.5);
+    /* Subtle transform for depth */
+    transform: translateZ(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.profile-image-container:hover {
+    transform: translateY(-4px) translateZ(0);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.12),
+        0 40px 80px rgba(0, 0, 0, 0.18),
+        0 80px 160px rgba(0, 0, 0, 0.25),
+        0 160px 320px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Image - Circular */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 30%;
+    object-fit: contain;
+    padding: 5px;
+}
+
+/* Profile Name */
+.profile-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    text-align: center;
+}
+
+/* Profile Title */
+.profile-title {
+    font-size: 0.85rem;
+    color: #d6d6d6;
+    margin: 0;
+    text-align: center;
+    font-weight: 800;
+    font-style: italic;
+    border-radius: 10%;
+    padding: 5px;
+    background-color: #3a3a3a;
+}
+
+.contact-section {
+    width: 100%;
+    padding-top: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px
+}
+
+.contact-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #999;
+    margin: 0;
+    font-weight: 300;
+}
+
+.contact-value {
+    font-size: 0.7rem;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffb300;
+    font-size: 2rem;
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 0.3),
+        0 20px 40px rgba(0, 0, 0, 0.35),
+        0 40px 80px rgba(0, 0, 0, 0.4),
+        0 80px 160px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+    background-color: #464646;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transform: translateZ(0);
+}
+
+.contact-icon:hover {
+    transform: translateY(-4px) translateZ(0);
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.12),
+        0 40px 80px rgba(0, 0, 0, 0.18),
+        0 80px 160px rgba(0, 0, 0, 0.25),
+        0 160px 320px rgba(0, 0, 0, 0.3);
+}
+
+
+.contact-value a {
+    color: inherit;
+    /* usa el color del texto */
+    text-decoration: none;
+    /* sin subrayado */
+    cursor: pointer;
+    /* icono de mano */
+}
+
+.contact-value a:hover {
+    opacity: 0.8;
+    /* opcional: leve efecto al pasar */
+}

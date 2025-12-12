@@ -1,0 +1,14 @@
+.portfolio-container {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 30px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}
