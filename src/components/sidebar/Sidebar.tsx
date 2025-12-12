@@ -6,7 +6,7 @@ function Sidebar() {
         <div className="Sidebar">
             <div className='profile-section'>
                 <div className='profile-image-container'>
-                    <img src="/images/profile-img.png" alt="Profile" className="profile-image" />
+                    <img src={`${import.meta.env.BASE_URL}images/profile-img.png`} alt="Profile" className="profile-image" />
                 </div>
                 <h2 className='profile-name'>Javier Machuca</h2>
                 <h3 className='profile-title'>Software Engineer</h3>

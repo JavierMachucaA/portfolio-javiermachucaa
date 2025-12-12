@@ -225,11 +225,14 @@
 }
 
 /* Testimonial Card */
+/* Testimonial Card */
 .testimonial-card {
     background-color: #3a3a3a;
     border-radius: 16px;
     padding: 24px;
     display: flex;
+    flex-direction: column;
+    /* Stack header and text vertically */
     gap: 20px;
     transition: all 0.3s ease;
 }
@@ -237,6 +240,12 @@
 .testimonial-card:hover {
     background-color: #464646;
     transform: translateY(-2px);
+}
+
+.testimonial-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 /* Testimonial Avatar */
@@ -252,8 +261,8 @@
     flex-shrink: 0;
 }
 
-/* Testimonial Content */
-.testimonial-content h4 {
+/* Testimonial Info (Header Text) */
+.testimonial-info h4 {
     font-size: 1rem;
     font-weight: 500;
     color: #fff;
@@ -263,7 +272,7 @@
 .testimonial-role {
     font-size: 0.85rem;
     color: #999;
-    margin: 0 0 12px 0;
+    margin: 0;
 }
 
 .testimonial-text {
@@ -271,6 +280,8 @@
     line-height: 1.6;
     color: #d6d6d6;
     margin: 0;
+    text-align: justify;
+    /* Justify content as requested */
 }
 
 .service-description {

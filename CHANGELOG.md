@@ -8,11 +8,13 @@ All notable changes to this project will be documented in this file.
 - **Internationalization (i18n)**: Full English/Spanish support using a custom `LanguageContext`.
 - **Language Toggle**: A custom 3D "Concave Arcade" style button for switching languages, positioned independently of the navigation to prevent animation overlaps.
 - **Data Layer**: Centralized `portfolioData.ts` file containing all static content in multiple languages.
+- **Testimonials UI**: Redesigned testimonial cards to separate the user header from the content, allowing full-width justified text for better readability.
 
 ### Changed
 - **Architecture**: Refactored the monolithic `Main.tsx` into small, focused components (`NavBar`, `About`, `Services`, `Testimonials`) located in `src/components/sections/`.
 - **Navigation Layout**: Updated navbar to `space-between` alignment, separating the language control from the navigation links.
 - **Main.css**: Added complex 3D CSS styling (inset shadows, gradients) for the new arcade button.
+- **Deployment**: Configured `vite.config.ts` and `package.json` for proper asset handling on GitHub Pages.
 
 ## [0.1.0] - 2024-03-20-11
 
