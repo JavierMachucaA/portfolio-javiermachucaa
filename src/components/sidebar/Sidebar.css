@@ -162,3 +162,25 @@
     opacity: 0.8;
     /* opcional: leve efecto al pasar */
 }
+
+@media (max-width: 1024px) {
+    .Sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .contact-item {
+        margin-bottom: 10px;
+        flex: 1 1 200px;
+        /* Allow items to grid nicely */
+    }
+}

@@ -1,14 +1,19 @@
 .portfolio-container {
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 30px;
-    max-width: 95%;
+    grid-template-columns: 0.12fr 1fr;
+    gap: 10px;
+    max-width: 1250px;
     margin: 0 auto;
-    padding: 2%;
+    padding: 60px 2%;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .portfolio-container {
         grid-template-columns: 1fr;
+        padding: 30px 15px;
+        gap: 10px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }

@@ -11,9 +11,11 @@ The application leverages the **GreenSock Animation Platform (GSAP)** for smooth
 *   **Interactive Zoom**: Navigation items utilize a transform-based scale animation (1.3x) on hover for immediate visual feedback.
 
 ### 2. Custom Asymmetric Design
-The UI moves away from standard "box" layouts by strictly following a custom reference design:
-*   **Main Container**: Features a specialized `border-radius` configuration (20px top-left, top-right, bottom-left) with a **sharp linear bottom-right corner**.
-*   **Integrated Navigation**: The navigation bar is visually "merged" into the top-right of the main container, featuring a distinctive **rounded bottom-left corner** that flows into the content area.
+The UI moves away from standard "box" layouts by strictly- **🧩 Modular Architecture**: Clean separation of concerns with dedicated components for each section, utilizing a `data`-driven approach for content management.
+- **🌍 Internationalization (i18n)**: Single-page switching between English and Spanish powered by a custom React Context engine, with zero page reloads.
+- **🎮 Interactive 3D Elements**: Arcade-style interactive toggle buttons and GSAP-powered particle systems that create a playful, premium feel.
+- **🎨 Advanced styling**: Custom CSS system implementing glassmorphism, 3D concave effects, and responsive mobile adaptations.
+- **⚡ Performance focused**: Lightweight, dependency-free translations and optimized rendering. is visually "merged" into the top-right of the main container, featuring a distinctive **rounded bottom-left corner** that flows into the content area.
 
 ### 3. Modern Tech Stack
 *   **Framework**: React 18 with TypeScript for type-safe component logic.
