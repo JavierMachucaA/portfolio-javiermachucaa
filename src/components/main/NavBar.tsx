@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 import gsap from 'gsap';
-import { useParticles } from '../hooks/useParticles';
-import { useLanguage } from '../context/LanguageContext';
+import { useParticles } from '../../hooks/useParticles';
+import { useLanguage } from '../../context/LanguageContext';
 
 function NavBar() {
     const [activeIndex, setActiveIndex] = useState(0);

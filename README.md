@@ -46,11 +46,14 @@ The UI moves away from standard "box" layouts by strictly- **🧩 Modular Archit
 ```text
 src/
 ├── components/
-│   ├── Main.tsx       # Core layout, contains the Particle Engine logic
-│   ├── Main.css       # Specific asymmetric border styles
-│   └── sidebar/       # Left profile panel components
-├── Layout.tsx         # Global grid layout definition
-└── main.tsx           # Entry point
+│   ├── layout/        # Wrapper components (Layout, container styles)
+│   ├── main/          # Core content components (Main, NavBar)
+│   ├── sections/      # Content sections (About, Services, Testimonials)
+│   └── sidebar/       # Profile sidebar components
+├── context/           # React Context (Language Provider)
+├── data/              # Static content & translations
+├── hooks/             # Custom hooks (useParticles, useLanguage)
+└── App.tsx            # Application root
 ```
 
 ## 🎨 Design specifics

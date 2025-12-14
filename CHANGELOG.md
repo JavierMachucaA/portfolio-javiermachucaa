@@ -9,9 +9,12 @@ All notable changes to this project will be documented in this file.
 - **Language Toggle**: A custom 3D "Concave Arcade" style button for switching languages, positioned independently of the navigation to prevent animation overlaps.
 - **Data Layer**: Centralized `portfolioData.ts` file containing all static content in multiple languages.
 - **Testimonials UI**: Redesigned testimonial cards to separate the user header from the content, allowing full-width justified text for better readability.
+- **Social Media Integration**: Added interactive social media icons (GitHub, LinkedIn, Instagram, X, Facebook) to the sidebar.
+- **Sticky Sidebar**: Implemented sticky positioning for the sidebar on desktop to improve navigation UX during scrolling.
 
 ### Changed
 - **Architecture**: Refactored the monolithic `Main.tsx` into small, focused components (`NavBar`, `About`, `Services`, `Testimonials`) located in `src/components/sections/`.
+- **Folder Structure**: Reorganized source files into modular directories (`components/layout`, `components/main`, `components/sidebar`, `components/sections`) for better scalability.
 - **Navigation Layout**: Updated navbar to `space-between` alignment, separating the language control from the navigation links.
 - **Main.css**: Added complex 3D CSS styling (inset shadows, gradients) for the new arcade button.
 - **Deployment**: Configured `vite.config.ts` and `package.json` for proper asset handling on GitHub Pages.

@@ -1,5 +1,6 @@
 import './Sidebar.css';
 import { MdEmail, MdPhone, MdCake, MdLocationOn } from 'react-icons/md';
+import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaXTwitter } from 'react-icons/fa6';
 
 function Sidebar() {
     return (
@@ -49,7 +50,25 @@ function Sidebar() {
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div className="social-section">
+                <a href="https://github.com/JavierMachucaA" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FaGithub />
+                </a>
+                <a href="https://linkedin.com/in/javier-ignacio-machuca-5182bb74" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FaLinkedin />
+                </a>
+                <a href="https://www.instagram.com/javier.machuca.a" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FaInstagram />
+                </a>
+                <a href="https://x.com/javiermachucaa1" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FaXTwitter />
+                </a>
+                <a href="https://www.facebook.com/javier.machuca1" target="_blank" rel="noopener noreferrer" className="social-link">
+                    <FaFacebook />
+                </a>
+            </div>
+        </div >
     );
 }
 

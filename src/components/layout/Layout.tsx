@@ -1,5 +1,5 @@
-import Sidebar from "./components/sidebar/Sidebar";
-import Main from "./components/Main";
+import Sidebar from "../sidebar/Sidebar";
+import Main from "../main/Main";
 import './Layout.css'
 
 function Layout() {
