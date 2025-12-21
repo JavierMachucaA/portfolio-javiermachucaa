@@ -1,0 +1,164 @@
+/* Contact Section Styles */
+.contact-section {
+    padding: 30px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-header {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: var(--white, #fafafa);
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 7px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 5px;
+    background: var(--orange-yellow-crayola, #FFDB70);
+    border-radius: 3px;
+}
+
+/* Contact Content Layout */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Map Section */
+.map-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--jet, #383838);
+    filter: grayscale(100%) invert(92%) contrast(85%);
+    /* Dark mode map effect */
+    transition: filter 0.3s ease;
+}
+
+.map-container:hover {
+    filter: none;
+    /* Show colors on hover */
+}
+
+/* Form Section */
+.contact-form-container {
+    background: var(--border-gradient-onyx, linear-gradient(to bottom right,
+                hsl(0, 0%, 25%) 0%,
+                hsla(0, 0%, 25%, 0) 50%));
+    /* Gradient border effect if wrapped, simplified here */
+    border-radius: 20px;
+    /* Usually cards in this theme have simply transparent or onyx background */
+}
+
+.form-title {
+    color: var(--white, #fafafa);
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: none;
+    /* Hidden as main title covers it usually, or kept for structure */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--jet, #383838);
+    border-radius: 14px;
+    padding: 15px 20px;
+    color: var(--white, #fafafa);
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: var(--orange-yellow-crayola, #FFDB70);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: var(--light-gray, #d6d6d6);
+    opacity: 0.7;
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Submit Button */
+.form-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    /* or generic button style */
+    color: var(--orange-yellow-crayola, #FFDB70);
+    border: 1px solid var(--jet, #383838);
+    padding: 12px 20px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-btn:hover {
+    background: var(--jet, #383838);
+    color: var(--white, #fff);
+    transform: translateY(-2px);
+}
+
+.form-btn:active {
+    transform: translateY(0);
+}

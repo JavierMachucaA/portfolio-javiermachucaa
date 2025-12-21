@@ -1,10 +1,14 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { useParticles } from '../../hooks/useParticles';
 import { useLanguage } from '../../context/LanguageContext';
 
-function NavBar() {
-    const [activeIndex, setActiveIndex] = useState(0);
+interface NavBarProps {
+    activeTab: number;
+    setActiveTab: (index: number) => void;
+}
+
+function NavBar({ activeTab, setActiveTab }: NavBarProps) {
     const navItemsRef = useRef<(HTMLLIElement | null)[]>([]);
     const { triggerParticles } = useParticles();
     const { content, language, toggleLanguage } = useLanguage();
@@ -12,7 +16,8 @@ function NavBar() {
     const tabs: string[] = content.navTabs;
 
     const handleNavClick = (index: number) => {
-        setActiveIndex(index);
+        setActiveTab(index);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     const handleMouseEnter = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -64,7 +69,7 @@ function NavBar() {
                     <li
                         key={index}
                         ref={(el) => { navItemsRef.current[index] = el; }}
-                        className={`nav-item ${activeIndex === index ? 'active' : ''}`}
+                        className={`nav-item ${activeTab === index ? 'active' : ''}`}
                     >
                         <a
                             href={`#${sections[index]}`}

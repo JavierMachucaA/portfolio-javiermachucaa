@@ -2,7 +2,7 @@ export type Language = 'en' | 'es';
 
 export const PORTFOLIO_DATA = {
     en: {
-        navTabs: ['About', 'Resume', 'Portfolio', 'Contact'],
+        navTabs: ['About', 'Resume',  /*'Portfolio',*/ 'Contact'],
         headings: {
             about: "About Me",
             services: "What I'm Doing",
@@ -56,7 +56,71 @@ export const PORTFOLIO_DATA = {
                 role: "Senior Software Engineer",
                 text: "Excellent professional with knowledge in Java, Python, and GCP."
             }
-        ]
+        ],
+        resume: {
+            education: [
+                {
+                    year: "2012 — 2016",
+                    title: "Computer Engineering",
+                    place: "Pontifical University Catholic of Valparaiso",
+                    description: "Comprehensive training in software development, project management, and systems architecture."
+                }
+            ],
+            experience: [
+                {
+                    year: "10/2021 — 10/2025",
+                    title: "Senior Full Stack Developer",
+                    place: "Banco Ripley",
+                    description: "Developed cloud-based solutions using AWS services such as S3, Directory Service, Glue, and Athena. Designed and implemented microservices in Java Spring Boot and Python, integrating with Oracle 19c. Built internal tools and web components using Angular. Led deployments on Google Cloud Run using Pub/Sub, MySQL, and cloud-native pipelines. Improved system performance through refactoring, automation, and optimization of critical processes. Collaborated directly with architecture, DevOps, and data teams."
+                },
+                {
+                    year: "06/2020 — 09/2021",
+                    title: "Full Stack Developer",
+                    place: "Experis",
+                    description: "Modernized legacy Flash systems by migrating them to Angular and Java 8. Developed cloud-ready modules for the CyberFinancial platform deployed on AWS."
+                },
+                {
+                    year: "10/2018 — 06/2020",
+                    title: "Full Stack Developer",
+                    place: "Zeke",
+                    description: "Maintained the ADIS platform using Java 6, Angular 2, PostgreSQL. Developed features for the Infogás Empresas system using Laravel, Angular 6, MongoDB, and C++."
+                },
+                {
+                    year: "02/2018 — 08/2018",
+                    title: "Java Developer",
+                    place: "Ingeniería Wiseconn",
+                    description: "Built and maintained REST APIs for a sensor-driven monitoring platform. Worked with Java 6–8, JSF, Hibernate, PrimeFaces, WildFly."
+                },
+                {
+                    year: "01/2016 — 01/2018",
+                    title: "Backend Developer",
+                    place: "Accenture",
+                    description: "Developed backend systems for Movistar Chile, including: Assignment Extension, Inventory Management, Number Portability. Technologies used: Java 7, JSF, WebLogic, Oracle, SOAP, Bash."
+                }
+            ],
+            skills: [
+                { name: "Java & Spring Boot", value: 95 },
+                { name: "Python (Flask/Django)", value: 85 },
+                { name: "Cloud (GCP/AWS)", value: 80 },
+                { name: "Frontend (React/Angular)", value: 75 },
+                { name: "Database (SQL/NoSQL)", value: 90 }
+            ]
+        },
+        contact: {
+            title: "Contact",
+            mapTitle: "Villa Alemana, Chile",
+            form: {
+                name: "Full Name",
+                email: "Email Address",
+                message: "Your Message",
+                submit: "Send Message",
+                placeholders: {
+                    name: "Full Name",
+                    email: "Email Address",
+                    message: "Hi! I'm hiring a new role and I think you would be a perfect fit..."
+                }
+            }
+        }
     },
     es: {
         navTabs: ['Sobre mí', 'Resumen', 'Portafolio', 'Contacto'],
@@ -113,6 +177,70 @@ export const PORTFOLIO_DATA = {
                 role: "Senior Software Engineer",
                 text: "Excelente profesional, con conocimientos en Java, Python y GCP."
             }
-        ]
+        ],
+        resume: {
+            education: [
+                {
+                    year: "2012 — 2016",
+                    title: "Computer Engineering",
+                    place: "Pontificia Universidad Católica de Valparaíso",
+                    description: "Formación integral en desarrollo de software, gestión de proyectos y arquitectura de sistemas."
+                }
+            ],
+            experience: [
+                {
+                    year: "10/2021 — 10/2025",
+                    title: "Senior Full Stack Developer",
+                    place: "Banco Ripley",
+                    description: "Desarrollo de soluciones basadas en la nube utilizando servicios AWS como S3, Directory Service, Glue y Athena. Diseño e implementación de microservicios en Java Spring Boot y Python, integrando con Oracle 19c. Construcción de herramientas internas y componentes web usando Angular. Liderazgo en despliegues en Google Cloud Run usando Pub/Sub, MySQL y pipelines nativos de la nube. Mejora del rendimiento del sistema a través de refactorización, automatización y optimización de procesos críticos. Colaboración directa con equipos de arquitectura, DevOps y datos."
+                },
+                {
+                    year: "06/2020 — 09/2021",
+                    title: "Full Stack Developer",
+                    place: "Experis",
+                    description: "Modernización de sistemas legacy en Flash migrándolos a Angular y Java 8. Desarrollo de módulos preparados para la nube para la plataforma CyberFinancial desplegada en AWS."
+                },
+                {
+                    year: "10/2018 — 06/2020",
+                    title: "Full Stack Developer",
+                    place: "Zeke",
+                    description: "Mantenimiento de la plataforma ADIS usando Java 6, Angular 2, PostgreSQL. Desarrollo de funcionalidades para el sistema Infogás Empresas usando Laravel, Angular 6, MongoDB y C++."
+                },
+                {
+                    year: "02/2018 — 08/2018",
+                    title: "Java Developer",
+                    place: "Ingeniería Wiseconn",
+                    description: "Construcción y mantenimiento de APIs REST para una plataforma de monitoreo basada en sensores. Trabajo con Java 6–8, JSF, Hibernate, PrimeFaces, WildFly."
+                },
+                {
+                    year: "01/2016 — 01/2018",
+                    title: "Backend Developer",
+                    place: "Accenture",
+                    description: "Desarrollo de sistemas backend para Movistar Chile, incluyendo: Extensión de Asignación, Gestión de Inventario, Portabilidad Numérica. Tecnologías utilizadas: Java 7, JSF, WebLogic, Oracle, SOAP, Bash."
+                }
+            ],
+            skills: [
+                { name: "Java & Spring Boot", value: 95 },
+                { name: "Python (Flask/Django)", value: 85 },
+                { name: "Cloud (GCP/AWS)", value: 80 },
+                { name: "Frontend (React/Angular)", value: 75 },
+                { name: "Database (SQL/NoSQL)", value: 90 }
+            ]
+        },
+        contact: {
+            title: "Contacto",
+            mapTitle: "Villa Alemana, Chile",
+            form: {
+                name: "Nombre Completo",
+                email: "Correo Electrónico",
+                message: "Tu Mensaje",
+                submit: "Enviar Mensaje",
+                placeholders: {
+                    name: "Nombre Completo",
+                    email: "Correo Electrónico",
+                    message: "¡Hola! Estoy buscando un nuevo perfil y creo que encajarías perfecto..."
+                }
+            }
+        }
     }
 };
