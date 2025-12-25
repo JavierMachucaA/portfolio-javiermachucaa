@@ -11,6 +11,7 @@ All notable changes to this project will be documented in this file.
 - **Testimonials UI**: Redesigned testimonial cards to separate the user header from the content, allowing full-width justified text for better readability.
 - **Social Media Integration**: Added interactive social media icons (GitHub, LinkedIn, Instagram, X, Facebook) to the sidebar.
 - **Sticky Sidebar**: Implemented sticky positioning for the sidebar on desktop to improve navigation UX during scrolling.
+- **AI Specs (.ia-specs)**: Added an `.ia-specs/` folder with `frontend-spec.yaml`, prompts and templates to standardize AI-assisted tasks (accessibility, responsive fixes, CV download, i18n improvements, and lightweight tests).
 
 ### Changed
 - **Architecture**: Refactored the monolithic `Main.tsx` into small, focused components (`NavBar`, `About`, `Services`, `Testimonials`) located in `src/components/sections/`.

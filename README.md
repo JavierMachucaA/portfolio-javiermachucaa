@@ -56,6 +56,17 @@ src/
 └── App.tsx            # Application root
 ```
 
+## 🤖 AI-assisted Specs (.ia-specs) 🔧
+
+This repository includes a `.ia-specs/` folder with AI-friendly task specs, prompts and templates to help generate small, reviewable PRs and focused frontend improvements (see `.ia-specs/frontend-spec.yaml` for prioritized tasks and `.ia-specs/prompts/` for implementation and review prompts).
+
+How to use:
+1. Open `.ia-specs/frontend-spec.yaml` to pick a task id.
+2. Use `.ia-specs/prompts/implement_task.md` when asking an assistant to implement a task.
+3. Use the templates in `.ia-specs/templates/` for consistent PRs and task cards.
+
+---
+
 ## 🎨 Design specifics
 
 The "Software Engineer" badge and navigation pills follow a strict color palette:

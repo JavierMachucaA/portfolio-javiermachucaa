@@ -1,0 +1,17 @@
+name: portfolio-javiermachucaa
+version: 1.0
+description: AI implementation specs for the frontend portfolio project.
+repo: ./
+primary_language: TypeScript
+framework: React + Vite
+maintainer: Javier Machuca
+
+files_of_interest:
+  - src/
+  - public/
+  - package.json
+
+notes: |
+  These specs are intended to be consumed by an AI assistant to produce
+  targeted code changes (PRs), reviews, and test scaffolding for the
+  frontend portfolio repository.

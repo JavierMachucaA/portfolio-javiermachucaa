@@ -1,0 +1,87 @@
+version: 1
+generated: 2025-12-24
+project: portfolio-javiermachucaa
+description: Frontend-focused AI task catalog for the portfolio site.
+
+tasks:
+  - id: improve-accessibility
+    title: Improve accessibility across site
+    description: |
+      Audit and fix common accessibility issues: semantic elements, aria
+      attributes, contrast, focus order, and keyboard navigation for
+      components in `src/` (NavBar, Sidebar, main sections).
+    files: ["src/main/NavBar.tsx","src/sidebar/Sidebar.tsx","src/sections/*"]
+    output: fixes, tests, and a short accessibility report
+    priority: high
+    estimate_hours: 3
+    prompt: prompts/implement_task.md
+
+  - id: responsive-layout
+    title: Ensure responsive design and mobile friendliness
+    description: |
+      Verify and update CSS and component layout for small and medium
+      screens. Focus on `App.css`, `Main.css`, `Layout.css` and section
+      styles to avoid overflow and ensure tap targets.
+    files: ["src/**/*.css","src/layout/*","src/sections/*"]
+    output: CSS adjustments and visual regression notes
+    priority: high
+    estimate_hours: 2
+    prompt: prompts/implement_task.md
+
+  - id: add-cv-download
+    title: Add a clear CV download button
+    description: |
+      Add a CV download button that uses the `public/CV/` assets,
+      provides an accessible label, and tracks clicks (console log
+      event or minimal analytics stub).
+    files: ["public/CV","src/main/*","src/components/*"]
+    output: button UI + tests
+    priority: medium
+    estimate_hours: 1
+    prompt: prompts/implement_task.md
+
+  - id: i18n-language-switch
+    title: Improve language switching and localization
+    description: |
+      Use existing `context/LanguageContext.tsx` to ensure language switch
+      persists across reloads (localStorage) and that text content in
+      `src/data/portfolioData.ts` and sections respects the selected language.
+    files: ["src/context/LanguageContext.tsx","src/data/portfolioData.ts","src/sections/*"]
+    output: language persistence and small locale tests
+    priority: medium
+    estimate_hours: 2
+    prompt: prompts/implement_task.md
+
+  - id: optimize-particles
+    title: Optimize particle background performance
+    description: |
+      Review `hooks/useParticles.ts` and adjust settings to reduce CPU
+      usage on mobile. Provide a prefers-reduced-motion fallback.
+    files: ["src/hooks/useParticles.ts"]
+    output: optimized hook + feature flag
+    priority: low
+    estimate_hours: 1
+    prompt: prompts/implement_task.md
+
+  - id: contact-form-validation
+    title: Add validation to contact form
+    description: |
+      Add client-side validation, accessible error messages and
+      optionally a mock submit handler for `src/sections/Contact.tsx`.
+    files: ["src/sections/Contact.tsx"]
+    output: validation logic + tests
+    priority: medium
+    estimate_hours: 2
+    prompt: prompts/implement_task.md
+
+  - id: add-basic-tests
+    title: Add basic unit and integration tests
+    description: |
+      Add small Jest / React Testing Library tests for critical
+      components (NavBar, LanguageContext, Contact form) and a
+      README snippet describing how to run tests locally.
+    files: ["src/**/*.{ts,tsx}"]
+    output: tests + CI hints
+    priority: low
+    estimate_hours: 3
+    prompt: prompts/implement_task.md
